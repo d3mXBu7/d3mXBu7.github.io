@@ -1432,7 +1432,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #71e03c;
+    background: #b4c4ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3072,9 +3072,9 @@ header.header {
     padding: 10px 12px;
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=LXGW+WenKai&display=swap");
+@import url("https://npm.elemecdn.com/lxgw-wenkai-screen-web/style.css");
 body {
-  font-family: 'JetBrains Mono', 'LXGW WenKai', Consolas, monospace;
+  font-family: 'JetBrains Mono', 'LXGW WenKai Screen', Consolas, monospace;
   font-size: 15px;
 }
 code,
@@ -3094,25 +3094,21 @@ body {
 .header-inner {
   background: var(--content-bg-color) !important;
   opacity: 0.75;
-  backdrop-filter: blur(10px);
   border-radius: 12px !important;
 }
 .sidebar-inner {
   background: var(--content-bg-color) !important;
   opacity: 0.75;
-  backdrop-filter: blur(10px);
   border-radius: 12px !important;
 }
 .post-block {
   background: var(--content-bg-color) !important;
   opacity: 0.75;
-  backdrop-filter: blur(10px);
   border-radius: 12px !important;
 }
 .search-pop-overlay .popup {
   background: var(--content-bg-color) !important;
   opacity: 0.75;
-  backdrop-filter: blur(10px);
   border-radius: 12px !important;
 }
 .post-body,
