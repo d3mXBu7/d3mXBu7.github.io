@@ -1432,7 +1432,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #b03633;
+    background: #4d1c83;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3071,4 +3071,55 @@ header.header {
   .comments {
     padding: 10px 12px;
   }
+}
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=LXGW+WenKai&display=swap");
+body {
+  font-family: 'JetBrains Mono', 'LXGW WenKai', Consolas, monospace;
+  font-size: 15px;
+}
+code,
+pre {
+  font-family: 'JetBrains Mono', 'LXGW WenKai', Consolas, monospace;
+}
+.posts-expand .post-title-link {
+  font-family: 'JetBrains Mono', 'LXGW WenKai', Consolas, monospace;
+}
+body {
+  background: url("/images/background.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f5f5f5;
+}
+.header-inner {
+  background: var(--content-bg-color) !important;
+  opacity: 0.75;
+  backdrop-filter: blur(10px);
+  border-radius: 12px !important;
+}
+.sidebar-inner {
+  background: var(--content-bg-color) !important;
+  opacity: 0.75;
+  backdrop-filter: blur(10px);
+  border-radius: 12px !important;
+}
+.post-block {
+  background: var(--content-bg-color) !important;
+  opacity: 0.75;
+  backdrop-filter: blur(10px);
+  border-radius: 12px !important;
+}
+.search-pop-overlay .popup {
+  background: var(--content-bg-color) !important;
+  opacity: 0.75;
+  backdrop-filter: blur(10px);
+  border-radius: 12px !important;
+}
+.post-body,
+.post-title,
+.menu-item a {
+  color: var(--text-color) !important;
+}
+.content-wrap {
+  background: transparent !important;
 }

